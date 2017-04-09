@@ -8,9 +8,9 @@ If you find any typo or error in the documentation, feel free to create a pull r
   
 ## Introduction
 
-1. [Getting started with Arduino]() - Arduino, IDE, Libraries, Programming
-2. [Basic electronics]() - Breadboards, Circuits, Tension Dividers, Resistances
-3. [Blink]() - Your first Arduino program
+1. [Getting started with Arduino]() - Arduino, Programming, the IDE
+2. [Basic electronics]() - Breadboards, Circuits
+3. [Hello World]() - Pins, LEDs, Delay
 
 ## The Essentials
 
