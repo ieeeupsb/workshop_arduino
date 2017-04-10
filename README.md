@@ -8,24 +8,24 @@ If you find any typo or error in the documentation, feel free to create a pull r
   
 ## Introduction
 
-1. [Getting started with Arduino]() - Arduino, Programming, the IDE
-2. [Basic electronics]() - Breadboards, Circuits
-3. [Hello World]() - Pins, LEDs, Delay
+1. [Getting started with Arduino](./content/gettingStarted.md) - Arduino, Programming, the IDE
+2. [Basic electronics](./content/basicElectronics.md) - Breadboards, Circuits
+3. [Hello World](./content/helloWorld.md) - Pins, LEDs, Delay
 
 ## The Essentials
 
-4. [On/Off]() - Variables and Conditions, Serial
-5. [Taking Measures]() - Potenciometer, PWM, Analog Readings
+4. [On/Off](./content/onOff.md) - Variables and Conditions, Serial
+5. [Taking Measures](./content/takingMeasures.md) - Potenciometer, PWM, Analog Readings
 
 ## Getting Interesting
 
-6. [Musical Genius]() - Buzzer, Analog & Digital
-7. [Stop Everything]() - Interrupts
+6. [Musical Genius](./content/musicalGenius.md) - Buzzer, Analog & Digital
+7. [Stop Everything](./content/stopEverything.md) - Interrupts
 
 ## Advanced-ish Stuff
 
-8. [Cheap Talk]() - Serial Communication, Connecting devices
+8. [Cheap Talk](./content/cheapTalk.md) - Serial Communication, Connecting devices
 
 ## Extras
 
-* [Broaden Your Horizons]() - Other IDEs
+* [Broaden Your Horizons](./content/broadenYourHorizons.md) - Other IDEs
