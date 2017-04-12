@@ -15,7 +15,7 @@ If you find any typo or error in the documentation, feel free to create a pull r
 ## The Essentials
 
 4. [On/Off](./content/onOff.md) - Variables and Conditions, Serial
-5. [Taking Measures](./content/takingMeasures.md) - Potenciometer, PWM, Analog Readings
+5. [Taking Measures](./content/takingMeasures.md) - Potentiometer, PWM, Analog Readings
 
 ## Getting Interesting
 
