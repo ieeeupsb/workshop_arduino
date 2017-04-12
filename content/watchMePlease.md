@@ -8,7 +8,7 @@ A watchdog timer is basically a timer that is set to a certain time, and starts 
 ## Code stuck? Never again
 
 First, let's make a code that will get stuck so you can see the watchdog in action. Wire a led to pin 13, you already have done that in a previous example.
-```
+```c++
 int past_time;
 
 void setup(){
@@ -26,11 +26,34 @@ void loop(){
   else{
       while(1);
   }
+}  
 ```
 This code should turn the LED on and off a couple of times until more than 5 seconds passed since the beginning of the program. When that happens, the code will get stuck in the `while(1)` statement and nothing will happen anymore. And that's where the watchdog enters.
 
-```
+```c++
+#include <avr/wdt.h>
 
+int past_time;
+
+void setup(){   
+
+    wdt_enable(WDTO_8S); // sets the timer to 8s (there is a range of values that you can choose)
+    pinMode(13,OUTPUT);
+    past_time = milis();
+}
+void loop(){
+
+wdt_reset(); // resets the watchdog timer
+if(milis() - past_time < 5000){
+    digitalWrite(13,HIGH);
+    delay(500);
+    digitalWrite(13,LOW);
+    delay(500);
+  }
+  else{
+      while(1);
+  }
+}
 
 ```
 
