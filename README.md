@@ -27,5 +27,5 @@ If you find any typo or error in the documentation, feel free to create a pull r
 8. [Cheap Talk](./content/cheapTalk.md) - Serial Communication, Connecting devices
 
 ## Extras
-
+* [Watch Me Please](./content/watchMePlease.md) - WatchDog Timers
 * [Broaden Your Horizons](./content/broadenYourHorizons.md) - Other IDEs
