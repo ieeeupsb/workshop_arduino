@@ -3,7 +3,7 @@
 You already know how to make some loops, read some sensors and send some information. But there is more to embedded systems than that. Imagine programming a safety critical system, and having something like: 
 
 In Pin 8 of your microcontroller, is a sensor that turns **HIGH** when a hand gets close to a rotating saw. You want to stop the saw, so you do something like:
-``` 
+```c++ 
 if ( digitalRead(8) == HIGH)
   stopSaw();
 ``` 
@@ -16,7 +16,7 @@ First, you need to know which pins support the use of interrupts. For your Ardui
 You can't just use 2 or 3 as your **interruptPin**. Because the **interruptPin 0**  corresponds to the _pin 2_ and the **1** to the _3_, in your particular Arduino (the Uno). You can use the function `digitalPinToInterrupt(2)` which maps the pin 2 to the corresponding interrupt (in this case the 0).
 As for the **functionCalled**, that's the function the code calls whenever an interrupt is triggered. Now, about the mode, that can either be **LOW** to trigger the interrupt whenever the pin is low, **CHANGE** to trigger the interrupt whenever the pin, **RISING** for when the pin goes from low to high, **FALLING** for when the pin goes from high to low.
 Let's write a simple example. Whenever the interrupt pin changes state a led will change its state. 
-```
+```c++
 int ledPin = 13;
 int interruptPin = 2;
 int state = 0;
@@ -39,7 +39,7 @@ void blink() {
 And that's how an interrupt works! 
 ## More on Interrupts
 You might want to have a section of your code not affected by your interrupts, a junk of code that has to run regardless of what happens in the world (usually you use this when you have time sensitive code, and an interrupt might mess up with the time). The way you do that is using the `noInterrupts()` function. To enable interrupts again, you just have to call `interrupts()` . So, your code should look something like this:
-```
+```c++
 void loop()
 {
   noInterrupts();
