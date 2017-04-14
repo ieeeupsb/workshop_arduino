@@ -1,3 +1,3 @@
 # Chep Talk
 
-[Main Menu](../README.md) | [Next](./broadenYourHorizons.md)
+[Main Menu](../README.md) | [Next](./watchMePlease.md)
