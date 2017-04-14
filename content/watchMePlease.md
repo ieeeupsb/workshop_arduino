@@ -72,3 +72,5 @@ if(milis() - past_time < 5000){
 ```
 
 So there you have it. You are now able to design a system that is able of restarting if something bad happens, both in software or in hardware.
+
+[Main Menu](../README.md) | [Next](./broadenYourHorizons.md)
