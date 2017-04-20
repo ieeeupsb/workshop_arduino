@@ -1,8 +1,8 @@
 # Hello World
 In this topic, you will see a simple Arduino "Hello World" example.
-It simply displays "hello world" ate beginning of execuuion and does nothing on loop.
+It simply displays "hello world" at the beginning of execution and does nothing on loop.
 
-NOTE: pay attention to the code line : "delay(1);". This is a good practice because it makes the microprocessor to wait and not just running as fast as it can. ( There are more theoretical aspects about this note, but that's enough)
+NOTE: pay attention to the code line : "delay(1);". This is a good practice because it forces the microprocessor to wait and not just running as fast as it can. ( There are more theoretical aspects about this note, but that's enough)
 
 ```c++
 
