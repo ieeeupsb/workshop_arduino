@@ -3,7 +3,7 @@ A watchdog timer is used a lot in embedded systems programming. Imagine you have
 
 ## How a watchdog timer works
 
-A watchdog is basically a timer that is set to a certain value, and starts decreasing. So you put a line amid your `void loop()` to reset the timer to the desaired value. If everything goes well, the watchdog is reset everytime and nevers reaches 0. But if, for whatever reason, the Arduino freezes and gets stuck at any point, the watchdog won't be reset. At some point, it will reach 0 and when that happens it will reset the Arduino, so the code will start running again. 
+A watchdog is basically a timer that is set to a certain value, and starts decreasing. So you put a line amid your `void loop()` to reset the timer to the desired value. If everything goes well, the watchdog is reset everytime and nevers reaches 0. But if, for whatever reason, the Arduino freezes and gets stuck at any point, the watchdog won't be reset. At some point, it will reach 0 and when that happens it will reset the Arduino, so the code will start running again. 
 
 ## Code stuck? Never again
 
