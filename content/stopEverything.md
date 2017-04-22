@@ -38,7 +38,7 @@ void blink() {
 ```
 And that's how an interrupt works! 
 ## More on Interrupts
-You might want to have a section of your code not affected by your interrupts, a junk of code that has to run regardless of what happens in the world (usually you use this when you have time sensitive code, and an interrupt might mess up with the time). The way you do that is using the `noInterrupts()` function. To enable interrupts again, you just have to call `interrupts()` . So, your code should look something like this:
+You might want to have a section of your code not affected by your interrupts, a chunk of code that has to run regardless of what happens in the world (usually you use this when you have time sensitive code, and an interrupt might mess up with the time). The way you do that is using the `noInterrupts()` function. To enable interrupts again, you just have to call `interrupts()` . So, your code should look something like this:
 ```c++
 void loop()
 {
