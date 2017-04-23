@@ -10,7 +10,7 @@ Everytime you plug an Arduino (Or any other USB), your system assigns it a diffe
 ![connection](./images/Selecionar_Porta.png "Selecionar Porta") </br>
 
 ## Arduino IDE - Board Selection
-Everytime you use the Arduino IDE, certify yourself that the IDE is compiling for the right Arduino board. This problem arises because not every Arduino has the same compiling restrictions since you can use the Arduino IDE to program other microcontrolers.  </br>
+Everytime you use the Arduino IDE, certify yourself that the IDE is compiling for the right Arduino board. This problem arises because not every Arduino has the same compiling restrictions since you can use the Arduino IDE to program other microcontrollers.  </br>
 ![connection](./images/selecionar_placa.png "Selecionar Placa") </br>
 
 ## Arduino IDE - Including library
@@ -20,7 +20,7 @@ Here is how you do that.</br>
 ![connection](./images/selecionar_biblioteca.png "Selecionar Biblioteca") </br>
 
 ## Arduino IDE - Uploading Code
-As all aspets on this workshop step, this process will become automatic. Here is how you compile, upload and communicate with your Arduino.</br>
+As all aspects on this workshop step, this process will become automatic. Here is how you compile, upload and communicate with your Arduino.</br>
 ![connection](./images/IDE.PNG "IDE") </br>
 
 1 - Compile - This button DOES NOT upload you code to the arduino, it just compiles your code. If there is any error, you will be noticed on the panel at the bottom.</br>
