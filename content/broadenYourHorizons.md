@@ -53,11 +53,11 @@ As you see, the code is more difficult to comprehend as it is more low-level, bu
 If you are the type of person that never leaves the command line, there is a way of programming your micros using a text editor of your choice (vim, emacs, nano,...) and then doing the build yourself.
 As an example, use the code above and save it to a file **yourfile.c**. <br>
 Now, let's compile the code. We are going to use the avr-gcc compiler, an target our chip, Atmega328.
-<br><code>avr-gcc -Os -mmcu=atmega328 -c yourfile.c </code> <br>
-You will get an object file. Then, you will need to insert the command <br><code>avr-gcc -mmcu=atmega328 -o yourfile.elf yourfile.o</code><br> to get an Executable and Linkable Format file, but there's one more step to be done before we upload our code. The final file format will be an Intel HEX, which conveys binary information, machine code, in an ASCII file. <br>
-<code>avr-objcopy -O ihex yourfile.elf lyourfile.hex</code> <br>
-Now, let's burn the code to the Arduino. First, you need to know the Arduino device path. Use <br><code>dmesg | grep ttyUSB*</code><br> and find the path for the ch341-UART chip (if its the only thing attached to your computer,probably it will be in dev/ttyUSB0 )
-Use <br><code>avrdude -c arduino -p atmega328p -P /dev/ttyUSB0 -U flash:w:blink.hex</code><br> to finally send the code to the Arduino.
+<br><code>avr-gcc -Os -mmcu=atmega328p -c yourfile.c </code> <br>
+You will get an object file. Then, you will need to insert the command <br><code>avr-gcc -mmcu=atmega328p -o yourfile.elf yourfile.o</code><br> to get an Executable and Linkable Format file, but there's one more step to be done before we upload our code. The final file format will be an Intel HEX, which conveys binary information, machine code, in an ASCII file. <br>
+<code>avr-objcopy -O ihex yourfile.elf yourfile.hex</code> <br>
+Now, let's burn the code to the Arduino. First, you need to know the Arduino device path. Use <code>dmesg | grep ttyUSB*</code> and find the path for the ch341-UART chip (if its the only thing attached to your computer,probably it will be in dev/ttyUSB0 )
+Use <br><code>avrdude -c arduino -p atmega328p -P /dev/ttyUSB0 -U flash:w:yourfile.hex</code><br> to finally send the code to the Arduino.
 
 
 
