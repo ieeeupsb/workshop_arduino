@@ -86,4 +86,4 @@ void loop() {
 ```
 Now that you master **`digitalRead()`** and **`digitalWrite()`**, you can move on to the next lesson...
 
-[Main Menu](../README.md) | [Next](./takingMeasures.md)
+[Main Menu](../README.md) | [Next](./takingMeasurements.md)
