@@ -22,10 +22,7 @@ Here is how you do that.</br>
 ## Arduino IDE - Uploading Code
 As all aspets on this workshop step, this process will become automatic. Here is how you compile, upload and communicate with your Arduino..</br>
 ![connection](./images/IDE.png "IDE") </br>
-1 - Compile - This button DOES NOT upload you code to the arduino, it just compiles your code. If there is any error, you will be noticed on the panel at the bottom
-2 - Upload Code - This button compiles ( the same as button Compile) and sends the code to the Arduino.
-3 - Serial Monitor - This button lets you to see( if there is) arduino's communication outputs as you can interact with him in real-time.
-Keep in mind that opening the Serial Monitor from PC side, makes your Arduino to reset ( Running "void setup" again)
+
 
 
 [Main Menu](../README.md) | [Next](./helloWorld.md)
