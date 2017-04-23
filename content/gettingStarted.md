@@ -21,7 +21,7 @@ Here is how you do that.</br>
 
 ## Arduino IDE - Uploading Code
 As all aspets on this workshop step, this process will become automatic. Here is how you compile, upload and communicate with your Arduino.</br>
-![connection](./images/IDE.png "IDE") </br>
+![connection](./images/IDE.PNG "IDE") </br>
 
 1 - Compile - This button DOES NOT upload you code to the arduino, it just compiles your code. If there is any error, you will be noticed on the panel at the bottom.</br>
 2 - Upload Code - This button compiles ( the same as button Compile) and sends the code to the Arduino.</br>
