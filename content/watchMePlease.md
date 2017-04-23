@@ -20,11 +20,11 @@ void setup(){
         digitalWrite(13,LOW);
         delay(250);
     } 
-    past_time = milis();
+    past_time = millis();
 }
 
 void loop(){
-  if(milis() - past_time < 5000){
+  if(millis() - past_time < 5000){
     digitalWrite(13,HIGH);
     delay(500);
     digitalWrite(13,LOW);
@@ -53,12 +53,12 @@ void setup(){
         digitalWrite(13,LOW);
         delay(250);
     } 
-    past_time = milis();
+    past_time = millis();
 }
 void loop(){
 
 wdt_reset(); // resets the watchdog timer
-if(milis() - past_time < 5000){
+if(millis() - past_time < 5000){
     digitalWrite(13,HIGH);
     delay(500);
     digitalWrite(13,LOW);
