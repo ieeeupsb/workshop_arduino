@@ -67,13 +67,13 @@ void loop() {
 
 ## "Analog" Output
 
-Unfortunatly, the Arduino doesn't truly have a analog output. What it does is "simulate" an analog output by outputing PWM (Pulse With Modulation).
+Unfortunately, the Arduino doesn't truly have a analog output. What it does is "simulate" an analog output by outputing PWM (Pulse With Modulation).
 
 ![PWM](./images/pwm.gif "PWM") </br>
 
-By controling the time between pulses, you can change the efective value of the square wave and "simulate" a value between 0 and 5V. PWM is good for a few applications like controling servos, but not optimal when you really need something trully analog.
+By controling the time between pulses, you can change the efective value of the square wave and "simulate" a value between 0 and 5V. PWM is good for a few applications like controling servos, but not optimal when you really need something truly analog.
 
-Using the same circuit as before, try this code and you can see for youself how you can harness the power of PWM.
+Using the same circuit as before, try this code and you can see for yourself how you can harness the power of PWM.
 
 ```Arduino
 
