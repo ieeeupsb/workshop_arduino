@@ -12,8 +12,9 @@ Also, the Arduino libraries are not very efficient in certain parts and waste RA
 ![connection](./images/platformIO.png "PlatformIO") </br>
 
 ## I like to get under the hood
-The Arduino microcontrollers are from Atmel, one of the leading microcontrollers manufacturer. If you want to unleash the full power of your chip, you will want to drop both the Arduino IDE and the Arduino libraries. What you will do is programm the micro in pure C, using the AVR libraries and [Atmel Studio](http://www.atmel.com/microsite/atmel-studio/). It uses the Visual Studio interface, which is a pretty good IDE. You will have access to a great software framework and the best debugging features.
-Have a look of this two codes, the first is programmed using the Arduino framework, the other is in pure C, using the AVR libraries.
+The Arduino microcontrollers are from Atmel, one of the leading microcontrollers manufacturer. If you want to unleash the full power of your chip, you will want to drop both the Arduino IDE and the Arduino libraries. What you will do is program the micro in pure C, using the AVR libraries and [Atmel Studio](http://www.atmel.com/microsite/atmel-studio/). It uses the Visual Studio interface, which is a pretty good IDE. You will have access to a great software framework and the best debugging features.
+Have a look of this two codes, the first is programmed using the Arduino framework, the other is in pure C, using the AVR libraries. <br>
+The Arduino code: <br>
 ```c++
  void setup() {
    pinMode(13, OUTPUT);
@@ -27,8 +28,9 @@ Have a look of this two codes, the first is programmed using the Arduino framewo
  }
 
 ```
+The Embedded C code: <br>
 ```c++
-#define F_CPU 16000000UL
+#define F_CPU 16000000UL // Sets the CPU frequency to 16Mhz
 
 #include <avr/io.h>
 #include <util/delay.h>
@@ -36,17 +38,17 @@ Have a look of this two codes, the first is programmed using the Arduino framewo
 int main(void)
 {
 
-    DDRB |= (1<<0);
+    DDRB |= (1<<0); // Set the pin as output
     while (1) 
     {
-        PORTB |= (1<<0);
+        PORTB |= (1<<0); // Pull the pin HIGH
         _delay_ms(1000);
-        PORTB &= ~(1<<0);
+        PORTB &= ~(1<<0); // Pull the pin LOW
         _delay_ms(1000);
     }
 }
 ```
-
+As you see, the code is more difficult to comprehend as it is more low-level, but the difference in the clock cycles is enormous, because a <code>digitalWrite()</code> function has a lot more going on than just pulling the passed pin HIGH.
 ## I live in the command line 
 
 [Main Menu](../README.md)
