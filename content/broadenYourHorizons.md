@@ -50,5 +50,7 @@ int main(void)
 ```
 As you see, the code is more difficult to comprehend as it is more low-level, but the difference in the clock cycles is enormous, because a <code>digitalWrite()</code> function has a lot more going on than just pulling the passed pin HIGH.
 ## I live in the command line 
+If you are the type of person that never leaves the command line, there is a way of programming your micros using a text editor of your choice (vim, emacs, nano,...) and then doing the build yourself.
+As an example, use the code above and save it to a file **yourfile.c**. <br>
 
 [Main Menu](../README.md)
