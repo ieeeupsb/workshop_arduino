@@ -7,7 +7,7 @@ Some examples of inputs are buttons, potentiometers, a keypad, or even a touchsc
 **Outputs**, on the other hand, allow the Arduino to tell you some information.</br>
 These can be a blinking LED, a buzzing sound, an LCD screen, ...
 
-In the previous exercise you got to see how to turn an LED on or off using **`digitalWrite()`**. Now, instead of a **`delay()`**, let's use a button.
+In the Blink example you got to see how to turn an LED on or off using **`digitalWrite()`**. Now, instead of a **`delay()`**, let's use a button.
 
 ## Variables and Reading Inputs
 
