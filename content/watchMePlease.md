@@ -9,6 +9,7 @@ A watchdog is basically a timer that is set to a certain value, and starts decre
 
 First, let's make a code that will get stuck so you can see the watchdog in action. Wire a led to pin 13, you already have done that in a previous example.
 ```c++
+int i;
 
 void setup(){
     pinMode(13,OUTPUT);
@@ -36,10 +37,11 @@ This code should turn the LED on and off a couple of times until more than 5 sec
 
 ```c++
 #include <avr/wdt.h> // include the watchdog library from Atmel
-
+int i;
 void setup(){   
 
-    wdt_enable(WDTO_8S); // sets the timer to 8s (there is a range of values that you can choose)
+    wdt_enable(WDTO_4S); // sets the timer to 8s (there is a range of values that you can choose)
+    wdt_reset(); 
     pinMode(13,OUTPUT);
    
     for(i=0;i < 5; i++){     // blynks 5 times at startup
