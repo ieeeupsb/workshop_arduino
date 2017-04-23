@@ -12,6 +12,40 @@ Also, the Arduino libraries are not very efficient in certain parts and waste RA
 ![connection](./images/platformIO.png "PlatformIO") </br>
 
 ## I like to get under the hood
+The Arduino microcontrollers are from Atmel, one of the leading microcontrollers manufacturer. If you want to unleash the full power of your chip, you will want to drop both the Arduino IDE and the Arduino libraries. What you will do is programm the micro in pure C, using the AVR libraries and [Atmel Studio](http://www.atmel.com/microsite/atmel-studio/). It uses the Visual Studio interface, which is a pretty good IDE. You will have access to a great software framework and the best debugging features.
+Have a look of this two codes, the first is programmed using the Arduino framework, the other is in pure C, using the AVR libraries.
+```c++
+ void setup() {
+   pinMode(13, OUTPUT);
+ }
+
+ void loop() {
+   digitalWrite(13, HIGH);
+   delay(1000);
+   digitalWrite(13, LOW);
+   delay(1000);
+ }
+
+```
+```c++
+#define F_CPU 16000000UL
+
+#include <avr/io.h>
+#include <util/delay.h>
+
+int main(void)
+{
+
+    DDRB |= (1<<0);
+    while (1) 
+    {
+        PORTB |= (1<<0);
+        _delay_ms(1000);
+        PORTB &= ~(1<<0);
+        _delay_ms(1000);
+    }
+}
+```
 
 ## I live in the command line 
 
