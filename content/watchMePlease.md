@@ -9,8 +9,7 @@ A watchdog is basically a timer that is set to a certain value, and starts decre
 
 First, let's make a code that will get stuck so you can see the watchdog in action. Wire a led to pin 13, you already have done that in a previous example.
 ```c++
-int past_time;
-int i;
+
 void setup(){
     pinMode(13,OUTPUT);
    
@@ -20,19 +19,17 @@ void setup(){
         digitalWrite(13,LOW);
         delay(250);
     } 
-    past_time = millis();
+    
 }
 
 void loop(){
-  if(millis() - past_time < 5000){
-    digitalWrite(13,HIGH);
-    delay(500);
-    digitalWrite(13,LOW);
-    delay(500);
-  }
-  else{
+ for(i=0;i < 5; i++){     // blinks 5 times and then gets stuck
+        digitalWrite(13,HIGH);
+        delay(500);
+        digitalWrite(13,LOW);
+        delay(500);
+    } 
       while(1);
-  }
 }  
 ```
 This code should turn the LED on and off a couple of times until more than 5 seconds passed since the beginning of the program. When that happens, the code will get stuck in the `while(1)` statement and nothing will happen anymore. And that's where the watchdog enters.
@@ -40,8 +37,6 @@ This code should turn the LED on and off a couple of times until more than 5 sec
 ```c++
 #include <avr/wdt.h> // include the watchdog library from Atmel
 
-int past_time;
-int i;
 void setup(){   
 
     wdt_enable(WDTO_8S); // sets the timer to 8s (there is a range of values that you can choose)
@@ -53,20 +48,18 @@ void setup(){
         digitalWrite(13,LOW);
         delay(250);
     } 
-    past_time = millis();
+   
 }
 void loop(){
 
 wdt_reset(); // resets the watchdog timer
-if(millis() - past_time < 5000){
-    digitalWrite(13,HIGH);
-    delay(500);
-    digitalWrite(13,LOW);
-    delay(500);
-  }
-  else{
+for(i=0;i < 5; i++){     // blinks 5 times and then gets stuck
+        digitalWrite(13,HIGH);
+        delay(500);
+        digitalWrite(13,LOW);
+        delay(500);
+    } 
       while(1);
-  }
 }
 
 ```
