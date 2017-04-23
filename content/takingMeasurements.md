@@ -34,7 +34,7 @@ What this code does, is simply read voltage being fed into the A0 pin and displa
 
 This is what it should look like:
 
-IMAGEM: Serial Monitor
+![Serial Monitor](./images/serial_monitor.png "Serial monitor") </br>
 
 Rotate the potentiometer and look at the values on the screen.
 
