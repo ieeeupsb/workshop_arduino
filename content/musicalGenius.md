@@ -1,6 +1,6 @@
 # Musical Genius
 
-To demonstrate that the Arduino can doo literally everything, we decided to (probably he wordt decision of our lives) give all the participants a buzzer! Yay... My ears are going to not suffer at all.
+To demonstrate that the Arduino can doo literally everything, we decided to (probably the worst decision of our lives) give all the participants a buzzer! Yay... My ears are going to not suffer at all.
 
 > Seriously, leave the torture for later. Play at will, but please don't turn the room into a orchestra gone bad.
 
