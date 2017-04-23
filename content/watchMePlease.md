@@ -65,13 +65,16 @@ for(i=0;i < 5; i++){     // blinks 5 times and then gets stuck
 }
 void watchdogOn() {
  
-
+// Clear the reset flag
 MCUSR = MCUSR & B11110111;
 
 WDTCSR = WDTCSR | B00011000; 
 
+// Set the watchdog timeout prescaler value to 1024
+// which will yeild a time-out interval of about 8s
 WDTCSR = B00100001;
 
+// Enable the watchdog timer interupt
 WDTCSR = WDTCSR | B01000000;
 MCUSR = MCUSR & B11110111;
 
