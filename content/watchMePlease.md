@@ -8,7 +8,7 @@ A watchdog is basically a timer that is set to a certain value, and starts decre
 ## Code stuck? Never again
 
 First, let's make a code that will get stuck so you can see the watchdog in action. Wire a led to pin 13, you already have done that in a previous example.
-```c++
+```Arduino
 int i;
 
 void setup(){
@@ -35,7 +35,7 @@ void loop(){
 ```
 This code should turn the LED on and off a couple of times until more than 5 seconds passed since the beginning of the program. When that happens, the code will get stuck in the `while(1)` statement and nothing will happen anymore. And that's where the watchdog enters.
 
-```c++
+```Arduino
 #include <avr/wdt.h> // include the watchdog library from Atmel
 int i;
 void setup(){   
