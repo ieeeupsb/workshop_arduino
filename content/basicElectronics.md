@@ -50,8 +50,9 @@ As SI units go, larger or smaller values of Ohms can be matched with a prefix li
 ## Potentiometer
 
 A potentiometer, informally a pot, is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider.[1] If only two terminals are used, one end and the wiper, it acts as a variable resistor or rheostat.
-The measuring instrument called a potentiometer is essentially a voltage divider used for measuring electric potential (voltage); the component is an implementation of the same principle, hence its name.
-![Potentiometer](https://./images/Potentiometer.png)
+The measuring instrument called a potentiometer is essentially a voltage divider used for measuring electric potential (voltage); the component is an implementation of the same principle, hence its name.</br>
+![connection](./images/Potentiometer.png "Potentiometer") </br>
+
 
 
 
