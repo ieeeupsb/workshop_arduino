@@ -15,7 +15,7 @@ Also, the Arduino libraries are not very efficient in certain parts and waste RA
 The Arduino microcontrollers are from Atmel, one of the leading microcontrollers manufacturer. If you want to unleash the full power of your chip, you will want to drop both the Arduino IDE and the Arduino libraries. What you will do is program the micro in pure C, using the AVR libraries and [Atmel Studio](http://www.atmel.com/microsite/atmel-studio/). It uses the Visual Studio interface, which is a pretty good IDE. You will have access to a great software framework and the best debugging features.
 Have a look of this two codes, the first is programmed using the Arduino framework, the other is in pure C, using the AVR libraries. <br>
 The Arduino code: <br>
-```c++
+```Arduino
  void setup() {
    pinMode(8, OUTPUT);
  }
@@ -29,7 +29,7 @@ The Arduino code: <br>
 
 ```
 The Embedded C code: <br>
-```c++
+```c
 #define F_CPU 16000000UL // Sets the CPU frequency to 16Mhz
 
 #include <avr/io.h>
