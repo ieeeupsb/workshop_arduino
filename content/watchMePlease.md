@@ -40,7 +40,7 @@ This code should turn the LED on and off a couple of times until more than 5 sec
 int i;
 void setup(){   
 
-    watchdogOn(); // sets the timer to 8s (there is a range of values that you can choose)
+      wdt_enable(WDTO_8S); // sets the timer to 8s (there is a range of values that you can choose)
     wdt_reset(); 
     pinMode(13,OUTPUT);
    
@@ -63,22 +63,7 @@ for(i=0;i < 5; i++){     // blinks 5 times and then gets stuck
     } 
       while(1);
 }
-void watchdogOn() {
- 
-// Clear the reset flag
-MCUSR = MCUSR & B11110111;
 
-WDTCSR = WDTCSR | B00011000; 
-
-// Set the watchdog timeout prescaler value to 1024
-// which will yeild a time-out interval of about 8s
-WDTCSR = B00100001;
-
-// Enable the watchdog timer interupt
-WDTCSR = WDTCSR | B01000000;
-MCUSR = MCUSR & B11110111;
-
-}
 
 ```
 
