@@ -1,5 +1,8 @@
 # Getting started with Arduino
 All information in this topic can be skiped if you are already proficient in the Arduino IDE.
+## Arduino IDE - Download
+
+https://www.arduino.cc/en/Main/Software
 
 ## Arduino IDE - built in Examples
 The simplest Arduino example. Switch a LED state (ON /OFF)  every half a second.</br>
