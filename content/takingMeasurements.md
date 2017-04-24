@@ -40,7 +40,7 @@ Rotate the potentiometer and look at the values on the screen.
 
 As you can see the values oscilate from 0 to 1023. Knowing that, you can hook up a LED to the Arduino and only turn it on, when the value goes over a certain threshold.
 
-![Trimpot and LED](./images/Trimpot_and_LED.png "Trimpot and LED") </br>
+![Trimpot and LED](./images/trimpot.png "Trimpot and LED") </br>
 
 ```Arduino
 
