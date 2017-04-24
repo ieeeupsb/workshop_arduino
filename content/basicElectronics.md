@@ -57,7 +57,7 @@ The measuring instrument called a potentiometer is essentially a voltage divider
 
 The buzzer that you are given is a piezoeletric one which means that upon submiting it a current, it will vibrate as long as you keep dynamic conditions (they can't be constant).
 You will control the buzzer's sound by controlling its frequency resonance.</br>
-![connection](./images/Buzzer.png "Buzzer") </br>
+![connection](./images/buzzer.png "Buzzer") </br>
 
 
 
