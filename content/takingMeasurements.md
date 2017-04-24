@@ -23,7 +23,7 @@ void setup() {
 }
 
 void loop() {
-    int potValue = analogInput(pot_pin);
+    int potValue = analogRead(pot_pin);
     Serial.println(potValue);
 }
 ```
@@ -54,7 +54,7 @@ void setup() {
 }
 
 void loop() {
-    int potValue = analogInput(pot_pin);
+    int potValue = analogRead(pot_pin);
 
     if(potValue >= 500)
         digitalWrite(led_pin, HIGH);
@@ -87,7 +87,7 @@ void setup() {
 }
 
 void loop() {
-    int potValue = analogInput(pot_pin);
+    int potValue = analogRead(pot_pin);
 
     analogWrite(led_pin, potValue);
 
