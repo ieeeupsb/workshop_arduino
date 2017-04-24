@@ -89,7 +89,7 @@ void setup() {
 void loop() {
     int potValue = analogRead(pot_pin);
 
-    analogWrite(led_pin, potValue);
+    analogWrite(led_pin, map(potValue, 0, 1023, 0, 255));
 
     Serial.println(potValue);
 }
