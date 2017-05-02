@@ -49,34 +49,33 @@ All that his Arduino will do is get your two numbers, add them together and if t
 This is their code:
 
 ```Arduino
-void setup(){
-    Serial.begin(9600);
-    pinMode(13,OUTPUT);
+int ledPin = 13;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);
 }
 
-int result = 0; //make result variable global
+void loop() {
+  String data = "";
 
-void loop(){
-    String data = "";
-    
-    data = Serial.readStringUntil('\n'); //Read one entire print (until the line break)
-    
-    if (!data.equals("")) {
-        // Read numbers and convert them from String to Integers
-        int n1 = data.charAt(0).toInt(); 
-        int n2 = data.charAt(2).toInt();
-        result = n1 + n2;
-    }
-    
+  data = Serial.readStringUntil('\n'); //Read one entire print (until the line break)
+
+  if (!data.equals("")) {
+    // Read numbers
+    int n1 = data.substring(0, 1).toInt();;
+    int n2 = data.substring(2, 3).toInt();;
+
+    // Calculate the result
+    int result = n1 + n2;
+
     // Apply LED status logic
-    if(result > 10){
-      digitalWrite(13, HIGH);
-    } else{
-      digitalWrite(13, LOW);
+    if (result > 10) {
+      digitalWrite(ledPin, HIGH);
+    } else {
+      digitalWrite(ledPin, LOW);
     }
-
-    // Make information about the LED persist for 2 seconds (2000 milliseconds)
-    delay(2000);
+  }
 }
 ```
 
