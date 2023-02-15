@@ -8,7 +8,7 @@ If you find any typo or error in the documentation, feel free to create a pull r
   
 ## Introduction
 
-1. [Getting started with Arduino](./content/gettingStarted.md) - Arduino, Programming, the IDE
+1. [Getting started with PlatformIO](./content/platformIO.md) - Arduino, Programming, the IDE
 2. [Basic electronics](./content/basicElectronics.md) - Breadboards, Circuits
 3. [Hello World](./content/helloWorld.md) - Pins, LEDs, Delay
 
