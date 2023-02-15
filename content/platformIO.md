@@ -32,7 +32,13 @@ If you are using external libraries, the program will call 📲 them in here.
 
 ![image](https://user-images.githubusercontent.com/71400611/219142260-9a9f2b9d-0837-4a54-a888-b53170b8977e.png)
 
-[Main Menu](../README.md) | [Next](./onOff.md)
+# Flash the code
+Flashing the code to the board is the act of sending the compiled code to the microcontroller. Only need to click on the arrow!
+
+![image](https://user-images.githubusercontent.com/71400611/219146008-ad9dde5c-9f52-44cd-8ae7-49c16275d692.png)
+
+![image](https://user-images.githubusercontent.com/71400611/219146034-fa0a6678-f7b7-4b9f-8702-0b552a0c7af1.png)
+
 
 # Libraries
 Last topic is Libraries. With Arduino.h you already have a lot of tools, but there are open-source libraries that will remove you lots of headaches if you just use them! There are some ways to do this, but I will give an example through PIO:
