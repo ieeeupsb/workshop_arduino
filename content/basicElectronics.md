@@ -53,12 +53,6 @@ A potentiometer, informally a pot, is a three-terminal resistor with a sliding o
 The measuring instrument called a potentiometer is essentially a voltage divider used for measuring electric potential (voltage); the component is an implementation of the same principle, hence its name.</br>
 ![connection](./images/Potentiometer.png "Potentiometer") </br>
 
-## Buzzer
-
-The buzzer that you are given is a piezoeletric one which means that upon submiting it a current, it will vibrate as long as you keep dynamic conditions (they can't be constant).
-You will control the buzzer's sound by controlling its frequency resonance.</br>
-![connection](./images/buzzer.png "Buzzer") </br>
-
 
 
 
