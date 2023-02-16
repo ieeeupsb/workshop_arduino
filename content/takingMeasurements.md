@@ -97,4 +97,4 @@ void loop() {
 
 > Please note that not all digital pins can output a PWM signal. Only the pins with a **'~'** before the number.
 
-[Main Menu](../README.md) | [Next](./musicalGenius.md)
+[Main Menu](../README.md) | [Next](./stopEverything.md)
