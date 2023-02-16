@@ -31,4 +31,4 @@ If you find any typo or error in the documentation, feel free to create a pull r
 ## Extras
 11. github basics (push, pull, commit, clone, other helpful links)
 12. State Machines (drawing)
-13. State Machines (code)
+13. State Machines (code, timers)
