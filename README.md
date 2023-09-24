@@ -2,33 +2,20 @@
 
 Welcome to our workshop on Arduino. We followed a hands-on approach so be ready to get your hands dirty real soon!
 
-Throughout the workshop, this page will be your **main menu**. We suggest that you follow the order we provide. Don't worry too much about the time, you will have access to this documentation later on.
+After going through the slides, you are now ready to start doing some exercises!
 
-If you find any typo or error in the documentation, feel free to create a pull request.
+## Setup
+[Links to Breadboard Image with buttons, same as slides](./content/platformIO.md) - Setup your connections
   
-## Introduction
+## Exercises
 
-1. [Getting started with PlatformIO](./content/platformIO.md) - Arduino, Programming, the IDE
-2. [Basic electronics](./content/basicElectronics.md) - Breadboards, Circuits
-3. [Hello World](./content/helloWorld.md) - Pins, LEDs, Delay
+Currently wrong links, change this:
+1. [Links to Exercise 1](./content/platformIO.md) - Blynk ;) -> digitalRead and digitalWrite
+2. [Links to Exercise 2](./content/basicElectronics.md) - So much resistance! -> analogRead, analogWrite and Serial
+3. [Links to Exercise 3](./content/helloWorld.md) - Interrupt
+4. [Links to Exercise 4](./content/helloWorld.md) - WatchDog
+5. [Links to Exercise 5](./content/helloWorld.md) - I2C or SPI
+6. [Links to Exercise 5](./content/helloWorld.md) - Complete a State Machine
 
-## The Essentials
 
-4. [On/Off](./content/onOff.md) - Variables and Conditions
-5. [Taking Measurements](./content/takingMeasurements.md) - Analog I/O
 
-## Getting Interesting
-
-6. [Musical Genius](./content/musicalGenius.md) - Buzzer, Analog & Digital
-7. [Stop Everything](./content/stopEverything.md) - Interrupts
-
-## Advanced-ish Stuff
-
-8. [Cheap Talk](./content/cheapTalk.md) - Serial Communication, Connecting devices
-9. [Watch Me Please](./content/watchMePlease.md) - WatchDog Timers
-10. [Broaden Your Horizons](./content/broadenYourHorizons.md) - Other IDEs
-
-## Extras
-11. github basics (push, pull, commit, clone, other helpful links)
-12. State Machines (drawing)
-13. State Machines (code, timers)
