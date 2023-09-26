@@ -6,3 +6,5 @@ Your microcontroller might be different and also the pins you are connecting to 
 2. The number displayed on the board, might not be the correct number of the GPIO, so google for your board pinout and figure out the correct number to use on software!
 
 ![connection](../images/breadboard.png) </br>
+
+[Home](./../../README.md) | [Next](./../exercise_1/blink.md)
