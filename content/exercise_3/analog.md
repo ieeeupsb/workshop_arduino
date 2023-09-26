@@ -1,4 +1,4 @@
-# Exercise 1 - Analog Write and Read
+# Exercise 3 - Analog Write and Read
 
 Analog reads and writes are extremely important whenever granularity is needed.
 

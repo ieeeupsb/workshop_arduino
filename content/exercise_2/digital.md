@@ -1,4 +1,4 @@
-# Exercise 1 - Digital Write and Read
+# Exercise 2 - Digital Write and Read
 
 Reading inputs and controlling outputs accordingly is the basis of microcontroller programming.
 

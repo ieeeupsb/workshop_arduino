@@ -1,4 +1,4 @@
-## Exercise 4 - Interrupts
+# Exercise 4 - Interrupts
 
 Interrupts are crucial when dealing with external inputs that are unpredictable, such as a button press triggered by a person.
 
