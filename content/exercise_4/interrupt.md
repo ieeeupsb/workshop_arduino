@@ -4,4 +4,4 @@ Interrupts are crucial when dealing with external inputs that are unpredictable,
 
 Create a program that triggers an Interrupt Service Routine (ISR) whenever a button is pressed. The ISR must increment a counter, and the Arduino must print the counter's value every second.
 
-[Home](.\..\..\README.md) | [Previous](./../exercise_3/analog.md) | [Next](./../exercise_5/i2c.md)
+[Home](./../../README.md) | [Previous](./../exercise_3/analog.md) | [Next](./../exercise_5/i2c.md)
