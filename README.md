@@ -6,10 +6,7 @@ After going through the slides, you are now ready to start doing some exercises!
 
 ## Setup
 
-TODO: change this
-
-
-[Breadboard setup](./content/breadboard_setup/setup.mb) - Setup your connections
+[Breadboard setup](./content/breadboard_setup/setup.md) - Setup your connections
   
 ## Exercises
 
